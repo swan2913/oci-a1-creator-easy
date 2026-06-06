@@ -1,0 +1,17 @@
+{
+  "compartmentId": "ocid1.tenancy.oc1..replace_me",
+  "userId": "ocid1.user.oc1..replace_me",
+  "fingerprint": "replace:me",
+  "region": "ap-chuncheon-1",
+  "keyFile": "C:\\Users\\YOU\\.oci\\oci_api_key.pem",
+  "availabilityDomain": "",
+  "subnetId": "",
+  "imageId": "",
+  "instanceName": "oci-a1-4c24g",
+  "sshPublicKeyFile": "C:\\Users\\YOU\\.ssh\\id_ed25519.pub",
+  "ocpus": 4,
+  "memoryInGBs": 24,
+  "bootVolumeSizeInGBs": 50,
+  "discordWebhookUrl": ""
+}
+
