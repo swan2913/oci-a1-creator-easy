@@ -2,7 +2,7 @@
 
 Windows에서 Oracle Cloud Always Free A1 인스턴스(`VM.Standard.A1.Flex`)를 반복 생성하는 PowerShell 자동화입니다.
 
-기본값은 4 OCPU, 24 GB RAM, 50 GB boot volume입니다. 생성 실패 사유는 매 시도마다 Discord webhook으로 전송할 수 있습니다.
+기본값은 4 OCPU, 24 GB RAM, 200 GB boot volume입니다. 생성 실패 사유는 매 시도마다 Discord webhook으로 전송할 수 있습니다.
 
 ## 준비물
 
@@ -95,5 +95,5 @@ powershell -ExecutionPolicy Bypass -File .\scripts\uninstall-task.ps1
 - webhook URL은 공개 repo에 올리지 마세요.
 - `Out of host capacity`는 정상적인 실패입니다. 용량이 생길 때까지 재시도합니다.
 - `TooManyRequests`가 자주 나오면 반복 주기를 늘리세요.
+- 200 GB boot volume은 Always Free block/boot volume 한도를 모두 사용합니다. 서버 1대만 쓸 때 권장합니다.
 - 생성 후에는 반드시 Discord webhook을 삭제하거나 재발급하세요.
-
